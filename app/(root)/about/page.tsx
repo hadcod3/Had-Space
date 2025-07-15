@@ -88,7 +88,7 @@ const AboutPage = () => {
   return (
     <>
         <div className="relative flex-center pt-16 lg:pt-24 overflow-x-hidden">
-            <Image alt="" src={"/assets/images/hero_gradient.png"} width={2000} height={2000} className="absolute w-screen top-0 -z-50 rotate-180" />
+            <Image alt="" src={"https://72415j1pxr.ufs.sh/f/PWAJ4Vne3fXctdMkkxWIh4V9G0SizUgyORcBk5EoYMs3Fxrl"} width={2000} height={2000} className="absolute w-screen top-0 -z-50 rotate-180" />
             <section className='flex flex-col items-center'>
                 <div className="max-w-[600px] p-5">
                     <div className='w-fit h-fit p-2 bg-gray-500/20 rounded-full border-0.05 border-gray-200/20' data-aos="fade-up" data-aos-anchor-placement="top-bottom">
