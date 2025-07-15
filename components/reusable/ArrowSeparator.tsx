@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import { PiFirstAidLight, PiGithubLogoLight } from 'react-icons/pi'
+import { PiFirstAidLight } from 'react-icons/pi'
 
 const ArrowSeparator = () => {
   return (
