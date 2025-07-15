@@ -39,7 +39,7 @@ const MobileNavBar = () => {
     return (
         <div ref={container} className='block md:hidden z-50'>
             <div className='fixed top-0 w-screen p-4 px-6 flex items-center justify-between backdrop-blur-sm bg-gradient-to-b from-zinc-50/40 to-transparent dark:from-zinc-900/40 dark:to-transparent -z-10'>
-                <TransitionLink href='/' className='text-h6-bold'>Had Verse</TransitionLink>
+                <TransitionLink href='/' className='text-h6-bold'>Had Space</TransitionLink>
                 <div className='text-h6 cursor-pointer' onClick={toggleMenu}>Menu</div>
             </div>
             <div className='menu-overlay fixed flex flex-col w-screen h-screen bg-neutral-200 dark:bg-black clipGsapOverlay'>
