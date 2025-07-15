@@ -30,7 +30,7 @@ const Collection = ({
   headTitle,
   subtitle,
   ctaLink,
-  loading
+  loading = false,
 }: CollectionProps) => {
   const displayLimit = -6
 
@@ -50,14 +50,16 @@ const Collection = ({
 
     const finalData = isSample ? source.slice(displayLimit) : source
 
-    return finalData.map((item) => (
-      <CardTemplate
-        key={item._id}
-        type="smallSize"
-        data={item}
-        dataType={dataType === 'projectData' ? 'project' : 'uiTemplate'}
-      />
-    ))
+    return finalData.map((item) =>
+      item && item._id ? (
+        <CardTemplate
+          key={item._id}
+          type="smallSize"
+          data={item}
+          dataType={dataType === 'projectData' ? 'project' : 'uiTemplate'}
+        />
+      ) : null
+    )
   }
 
   const renderBlogCards = () => {
@@ -77,8 +79,7 @@ const Collection = ({
     ))
   }
 
-  const shouldShowEmptyState =
-    !loading && (!data || data.length === 0)
+  const shouldShowEmptyState = !loading && (!data || data.length === 0)
 
   return (
     <div className="w-full flex-1">
@@ -101,7 +102,9 @@ const Collection = ({
           <EmptyStateText />
         ) : (
           <div className="relative w-full grid auto-rows-min gap-4 md:grid-cols-3">
-            {collectionType === 'smallCard' ? renderSmallCards() : renderBlogCards()}
+            {collectionType === 'smallCard'
+              ? renderSmallCards()
+              : renderBlogCards()}
           </div>
         )}
       </div>
