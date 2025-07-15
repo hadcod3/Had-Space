@@ -98,14 +98,14 @@ const Collection = ({
           )}
         </div>
 
-        {shouldShowEmptyState ? (
-          <EmptyStateText />
-        ) : (
+        {!shouldShowEmptyState ? (
           <div className="relative w-full grid auto-rows-min gap-4 md:grid-cols-3">
             {collectionType === 'smallCard'
               ? renderSmallCards()
               : renderBlogCards()}
           </div>
+        ) : (
+          <EmptyStateText />
         )}
       </div>
     </div>

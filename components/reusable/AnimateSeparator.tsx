@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import { PiFirstAidLight } from 'react-icons/pi'
 
-const ArrowSeparator = () => {
+const AnimateSeparator = () => {
   return (
     <div className='flex justify-center items-end w-full gap-x-1 py-5'>
         <PiFirstAidLight size={12} className='animate-fadeInOut opacity-50 delay-2000'/>
@@ -18,4 +18,4 @@ const ArrowSeparator = () => {
   )
 }
 
-export default ArrowSeparator
+export default AnimateSeparator

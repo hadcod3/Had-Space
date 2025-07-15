@@ -1,5 +1,5 @@
 'use client'
-import ArrowSeparator from "@/components/reusable/ArrowSeparator";
+import AnimateSeparator from "@/components/reusable/AnimateSeparator";
 import Collection from "@/components/reusable/Collection";
 import DashedSeparator from "@/components/reusable/DashedSeparator";
 import Footer from "@/components/reusable/Footer";
@@ -82,7 +82,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-              <ArrowSeparator/>
+              <AnimateSeparator/>
           </div>
         </section>
 
